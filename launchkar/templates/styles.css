@@ -1,0 +1,261 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a0a0a;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .logo span {
+    color: #7a7aff;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav ul li a:hover {
+    color: #fff;
+  }
+  .auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .login-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  .signup-btn {
+    background-color: #7a7aff;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    padding: 80px 50px;
+    position: relative;
+  }
+  .hero-content {
+    max-width: 600px;
+    z-index: 2;
+  }
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .highlight {
+    color: #7a7aff;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  .buttons button {
+    margin-right: 15px;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+  }
+  .start-btn {
+    background-color: #7a7aff;
+    color: #fff;
+  }
+  .demo-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #777;
+  }
+  .trust {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  .trust img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .trust strong {
+    font-weight: 600;
+  }
+  
+  /* Floating Cards */
+  .cards {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  .card .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .card p {
+    color: #aaa;
+    font-size: 15px;
+  }
+
+
+
+
+  .how-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .card p {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #7a7aff;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #5a5acf;
+  }
+
+  footer.footer {
+    margin-top: 60px;
+    padding: 30px 40px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo .highlight {
+    color: #7a7aff;
+  }
+  
+  .rating {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .footer-btn {
+    background-color: #7a7aff;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-btn:hover {
+    background-color: #5a5acf;
+  }
+  
+  .footer-btn.outline {
+    background-color: transparent;
+    border: 1px solid #7a7aff;
+    color: #7a7aff;
+  }
+  
+  .footer-btn.outline:hover {
+    background-color: #2e2e2e;
+  }
+  
+  
+  
